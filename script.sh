@@ -14,7 +14,7 @@ gnuplot -persist <<EOF
 set grid
 set key left top
 set xlabel "Radio adimensional"
-set ylabel "Densidad"
+set ylabel "Densidad adimensional"
 plot '${DATA_DIR}/Politropa_0.dat' u 1:(\$2**0) w l lw 3 lc 1 title 'n=0',\
 	 '${DATA_DIR}/Politropa_1.dat' u 1:2   w l lw 3 lc 3 title 'n=1',\
      '${DATA_DIR}/Politropa_2.dat' u 1:(\$2**1.5) w l lw 3 lc 2 title 'n=3/2',\
